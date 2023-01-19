@@ -29,6 +29,7 @@ export const pureAddUserCallback = (
   setUsers: (users: Array<UserType>) => void,
   users: UserType[]
 ) => {
+  debugger;
   // need to fix any
   const user = {
     _id: v1(),
@@ -38,7 +39,16 @@ export const pureAddUserCallback = (
 };
 
 const HW3 = () => {
-  const [users, setUsers] = useState<UserType[]>([]); // need to fix any
+  const [users, setUsers] = useState<UserType[]>([
+    // {
+    //   _id: "sdsd",
+    //   name: "1111",
+    // },
+    // {
+    //   _id: "sdsd",
+    //   name: "2222222222",
+    // },
+  ]); // need to fix any
 
   const addUserCallback = (name: string) => {
     // need to fix any

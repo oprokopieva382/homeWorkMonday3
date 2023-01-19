@@ -13,6 +13,7 @@ export const pureAddUser = (
   setName: (name: string) => void,
   addUserCallback: (name: string) => void
 ) => {
+  debugger;
   if (name === "") {
     setError("Ошибка! Введите имя!");
   } else {
@@ -58,6 +59,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     error && setError("");
   };
   const addUser = () => {
+    debugger;
     pureAddUser(name, setError, setName, addUserCallback);
   };
 
@@ -69,8 +71,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     pureOnEnter(e, addUser);
   };
 
-  const totalUsers = users.length; // need to fix
-  const lastUserName = name; // need to fix
+  const totalUsers = users.length; // need to fix //
+  const lastUserName = users[users.length - 1]?.name  // need to fix
 
   return (
     <Greeting
