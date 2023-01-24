@@ -2,9 +2,16 @@
 }
 
 .input {
+  width: 372px;
+  height: 36px;
+  radius: 5px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
 }
 
 .inputWrapper {
+  margin-left: 70px;
+  padding: 24px;
 }
 
 .superInput {
@@ -17,4 +24,10 @@
 }
 
 .error {
+  color: #cc1439;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
